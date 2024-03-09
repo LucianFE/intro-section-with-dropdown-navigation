@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper flex">
+        <div class="left-nav flex">
+          <div class="logo">
+            <img src="assets/images/logo.svg" alt="logo" />
+          </div>
+          <nav class="desktop-nav">
+            <ul class="nav-items flex">
+              <li class="nav-item has-dropdown">
+                <a href="#"
+                  >Features  <span class="arrow">
+                    <img src="assets/images/icon-arrow-down.svg" alt="icon" /></a>
+                <ul class="dropdown-menu first">
+                  <li class="dropdown-item">
+                    <img src="assets/images/icon-todo.svg" alt="icon" />
+                    Todo List
+                  </li>
+                  <li class="dropdown-item">
+                    <img src="assets/images/icon-calendar.svg" alt="icon" />
+                    Calendar
+                  </li>
+                  <li class="dropdown-item">
+                    <img src="assets/images/icon-reminders.svg" alt="icon" />
+                    Reminders
+                  </li>
+                  <li class="dropdown-item">
+                    <img src="assets/images/icon-planning.svg" alt="icon" />
+                    Planning
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-dropdown">
+                <a href="#"
+                  >Company  <span class="arrow">
+                    <img src="assets/images/icon-arrow-down.svg" alt="icon" /></a>
+                <ul class="dropdown-menu second">
+                  <li class="dropdown-item">History</li>
+                  <li class="dropdown-item">Our Team</li>
+                  <li class="dropdown-item">Blog</li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right-nav">
+          <div class="account-btns">
+            <button class="btn no-border-btn">Login</button>
+            <button class="btn border-btn">Register</button>
+          </div>
+          <div class="open-mobile-nav">
+            <img src="assets/images/icon-menu.svg" alt="icon" />
+          </div>
+        </div>
+        <div class="mobile-nav-container hidden">
+          <div class="modal"></div>
+          <div class="mobile-nav flex">
+            <div class="close-mobile-nav">
+              <img src="assets/images/icon-close-menu.svg" alt="icon" />
+            </div>
+            <nav class="mobile-menu">
+              <ul class="mobile-menu-items">
+                <li class="mobile-menu-item has-dropdown">
+                  <a href="#">
+                    Features
+                    <span class="arrow">
+                      <img src="assets/images/icon-arrow-down.svg" alt="icon" />
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                      <img src="assets/images/icon-todo.svg" alt="icon" />
+                      Todo List
+                    </li>
+                    <li class="dropdown-item">
+                      <img src="assets/images/icon-calendar.svg" alt="icon" />
+                      Calendar
+                    </li>
+                    <li class="dropdown-item">
+                      <img src="assets/images/icon-reminders.svg" alt="icon" />
+                      Reminders
+                    </li>
+                    <li class="dropdown-item">
+                      <img src="assets/images/icon-planning.svg" alt="icon" />
+                      Planning
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobile-menu-item has-dropdown">
+                  <a href="#">
+                    Company
+                    <span class="arrow">
+                      <img src="assets/images/icon-arrow-down.svg" alt="icon" />
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">History</li>
+                    <li class="dropdown-item">Our Team</li>
+                    <li class="dropdown-item">Blog</li>
+                  </ul>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="#">Careers</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="#">About</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="account-btns-mobile">
+              <button class="btn no-border-btn">Login</button>
+              <button class="btn border-btn">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="hero-img">
+        <picture>
+          <source
+            media="(min-width: 680)"
+            srcset="assets/images/image-hero-desktop.png"
+          />
+          <img src="assets/images/image-hero-mobile.png" alt="hero image" />
+        </picture>
+      </div>
+      <div class="text-content">
+        <h1>Make <span class="wrap-text">remote work</span></h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn plain-btn">Learn more</button>
+        <div class="clients flex">
+          <div>
+            <img src="assets/images/client-databiz.svg" alt="logo client-databiz" />
+          </div>
+          <div>
+            <img src="assets/images/client-audiophile.svg" alt="logo client-audiophile" />
+          </div>
+          <div>
+            <img src="assets/images/client-meet.svg" alt="logo client-meet" />
+          </div>
+          <div>
+            <img src="assets/images/client-maker.svg" alt="logo client-maker" />
+          </div>
+        </div>
+      </div>
+    </main>
+ 
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
